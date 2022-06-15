@@ -1,8 +1,5 @@
 import { describe, expect, it } from "vitest";
-
-const AddCounter = (num1: number, num2: number) => {
-  return num1 + num2;
-};
+import { AddCounter } from "./add";
 
 describe("function add", () => {
   const iptest = [
