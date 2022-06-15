@@ -89,12 +89,18 @@ describe("test function FindBWPrime", () => {
       higherNumber: 20.1,
       expected: 0,
     },
-    /* {
+    {
       name: "fails : lowerNumber [float]",
-      lowerNumber: 10.5,
+      lowerNumber: 15.5,
       higherNumber: 20,
       expected: 0,
-    }, */
+    },
+    {
+      name: "fails : higherNumber [float]",
+      lowerNumber: 25,
+      higherNumber: 30.8,
+      expected: 0,
+    },
   ];
 
   ipTestFail.forEach((v) => {

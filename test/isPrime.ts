@@ -9,6 +9,9 @@ export const FindBWPrime = (lowerNumber: string | number, higherNumber: string |
   if (typeof lowerNumber == "string" || typeof higherNumber == "string") {
     return 0;
   }
+  if (!Number.isInteger(lowerNumber) || !Number.isInteger(higherNumber)) {
+    return 0;
+  }
   if (lowerNumber > higherNumber) {
     return 0;
   }
